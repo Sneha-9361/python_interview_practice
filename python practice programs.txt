@@ -56,3 +56,74 @@ def check_anagram(w1, w2):
 
 # Call the function to test it:
 check_anagram("listen", "silent")
+
+
+
+### 1. Loop Keywords (`break`, `continue`, `pass`)
+
+```python
+for n in [1, 2, 3, 4]:
+    if n == 2:
+        continue
+    if n == 3:
+        pass
+    if n == 4:
+        break
+    print(n)
+
+```
+
+---
+
+### 2. `return` vs `print`
+
+```python
+def add(a, b):
+    return a + b
+
+ans = add(5, 3)
+print(ans)
+
+```
+
+---
+
+### 3. `*args` and `**kwargs`
+
+```python
+def add_all(*args):
+    return sum(args)
+
+print(add_all(10, 20, 30))
+
+def profile(**kwargs):
+    print(kwargs)
+
+profile(name="Arun", city="Salem")
+
+```
+
+---
+
+### 4. `lambda` Function
+
+```python
+double = lambda x: x * 2
+print(double(5))
+
+```
+
+---
+
+### 5. `yield` Keyword (Generators)
+
+```python
+def get_numbers():
+    yield 1
+    yield 2
+    yield 3
+
+for num in get_numbers():
+    print(num)
+
+```
