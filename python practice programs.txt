@@ -59,6 +59,7 @@ check_anagram("listen", "silent")
 
 
 
+<<<<<<< HEAD
 # Reversing a list
 numbers = [10, 20, 30, 40]
 reversed_nums = numbers[::-1]
@@ -105,3 +106,73 @@ def get_unique_elements(numbers):
 nums = [1, 2, 2, 3, 4, 4, 5]
 print(get_unique_elements(nums))
 # Output: [1, 2, 3, 4, 5] (order might vary because sets are unordered)
+=======
+### 1. Loop Keywords (`break`, `continue`, `pass`)
+
+```python
+for n in [1, 2, 3, 4]:
+    if n == 2:
+        continue
+    if n == 3:
+        pass
+    if n == 4:
+        break
+    print(n)
+
+```
+
+---
+
+### 2. `return` vs `print`
+
+```python
+def add(a, b):
+    return a + b
+
+ans = add(5, 3)
+print(ans)
+
+```
+
+---
+
+### 3. `*args` and `**kwargs`
+
+```python
+def add_all(*args):
+    return sum(args)
+
+print(add_all(10, 20, 30))
+
+def profile(**kwargs):
+    print(kwargs)
+
+profile(name="Arun", city="Salem")
+
+```
+
+---
+
+### 4. `lambda` Function
+
+```python
+double = lambda x: x * 2
+print(double(5))
+
+```
+
+---
+
+### 5. `yield` Keyword (Generators)
+
+```python
+def get_numbers():
+    yield 1
+    yield 2
+    yield 3
+
+for num in get_numbers():
+    print(num)
+
+```
+>>>>>>> 5670e437611dc791da59e5a2556001590a1efa88
