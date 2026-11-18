@@ -56,3 +56,52 @@ def check_anagram(w1, w2):
 
 # Call the function to test it:
 check_anagram("listen", "silent")
+
+
+
+# Reversing a list
+numbers = [10, 20, 30, 40]
+reversed_nums = numbers[::-1]
+print(reversed_nums)  # Output: [40, 30, 20, 10]
+
+# Reversing a string
+word = "python"
+reversed_word = word[::-1]
+print(reversed_word)  # Output: "nohtyp"
+
+
+
+frequency counting pattern:
+
+def count_items(items):
+    # Step 1: Create an empty dictionary to store counts
+    counts = {}
+    
+    # Step 2: Loop through each item one by one
+    for item in items:
+        # .get(item, 0) checks if the item is already there. 
+        # If yes, it adds 1 to the current count. If no, it starts at 0 and adds 1.
+        counts[item] = counts.get(item, 0) + 1
+        
+    return counts
+
+# Test the code
+fruits = ["apple", "banana", "apple", "orange", "banana", "apple"]
+print(count_items(fruits))
+# Output: {'apple': 3, 'banana': 2, 'orange': 1}
+
+
+
+unique elements:
+
+def get_unique_elements(numbers):
+    # Step 1: Convert the list to a set (sets automatically remove duplicates)
+    unique_set = set(numbers)
+    
+    # Step 2: Convert it back to a list if you need an ordered list again
+    return list(unique_set)
+
+# Test the code
+nums = [1, 2, 2, 3, 4, 4, 5]
+print(get_unique_elements(nums))
+# Output: [1, 2, 3, 4, 5] (order might vary because sets are unordered)
