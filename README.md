@@ -3,6 +3,8 @@
 This repository contains my daily Python practice programs, logic building, and interview preparation notes.
 
 ## What is inside:
-- Counting characters and words using dictionaries
-- Anagram checking algorithms
-- Step-by-step coding logic
+- Loop Keywords (break, continue, pass)
+- Return vs Print in Functions
+- Flexible Arguments (*args and **kwargs)
+- Lambda Functions
+- Yield Keyword and Generators
